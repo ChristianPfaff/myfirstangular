@@ -23,3 +23,18 @@
     transform: scale(1.1);
   }
 }
+
+.slideshow-overlay{
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  top:0;
+  right: 0;
+  padding-left: 120px;
+  padding-right: 120px;
+
+  p{
+    color: white;
+    font-size: 48px;
+  }
+
+}

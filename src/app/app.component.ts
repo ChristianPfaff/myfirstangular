@@ -8,17 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   images = ['Berghaupten.jpg', 'Gengenbach.jpg', 'Spargel.jpg'];
   currentImage = 0;
+  showImage = true;
 
   ngOnInit() {
     this.updateImage();
   }
 
   updateImage() {
-    setInterval(()=>{
+    setInterval(() => {
       this.currentImage++;
       this.currentImage = this.currentImage % this.images.length;
+      this.showImage = false;
 
-    },8000);
+      setTimeout(() => {
+        this.showImage = true;
+      }, 10);
+    }, 8000);
   }
 }
-
