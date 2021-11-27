@@ -3,8 +3,8 @@
 </div>
 
   <div class="slideshow-container slideshow-overlay">
-    <p>
-      Bring engineering to the next level
+    <p *ngIf ="showImage" class="fadeIn">
+      {{headlines[currentImage]}}
     </p>
 
   </div>
