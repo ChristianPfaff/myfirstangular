@@ -2,6 +2,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
+  top: 0;
   height: 80;
   z-index: 1;
   padding-left: 120px;
@@ -25,6 +26,7 @@ header {
   img {
     height: 35px;
     padding: 10px 0 10px 0;
+    cursor: pointer;
   }
 }
 
