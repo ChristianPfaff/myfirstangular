@@ -1,18 +1,11 @@
-<header>
+<header [class.headerDark]="darkMode">
+  <img  routerLink="/" src="assets/img/cp_lgo.png" alt="" />
 
-
-
-
-
-
-
-
-  <img src="assets/img/cp_lgo.png" alt="">
-
-  <div>
-    <a href="#">Home</a>
+  <!-- <div> -->
+  <div [class.darkLinks]="darkMode">
+    <a routerLink="/">Home</a>
     <a href="#">Curriculum</a>
-    <a href="#">Projekte</a>
-    <a href="#">Impressum</a>
+    <a href="#">Projects</a>
+    <a routerLink="/imprint">Imprint</a>
   </div>
 </header>
